@@ -2,34 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <!--Главная страница-->
 
 <body class="body">
-    <section class="hero-page center">
-        <img src="./img/star-big.svg" class="star star-big" alt="*">
-        <img src="./img/star-2.svg" class="star star-1" alt="*">
-        <img src="./img/star-1.svg" class="star star-2" alt="*">
-        <img src="./img/star-3.svg" class="star star-3" alt="*">
-        <img src="./img/star-4.svg" class="star star-4" alt="*">
+  <section class="hero-page center">
+    <img src="./img/star-big.svg" class="star star-big" alt="*">
+    <img src="./img/star-2.svg" class="star star-1" alt="*">
+    <img src="./img/star-1.svg" class="star star-2" alt="*">
+    <img src="./img/star-3.svg" class="star star-3" alt="*">
+    <img src="./img/star-4.svg" class="star star-4" alt="*">
 
-        <div class="hero-page__content">
-            <h1 class="hero-page__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
-            <p class="hero-page__intro">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай «<span
-                    class="bold-text">Поехали!</span>» и <span class="bold-text">приступай.</p>
-            <a class="button" href="#">Поехали!</a>
+    <div class="hero-page__content">
+      <h1 class="hero-page__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
+      <p class="hero-page__intro">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай «<span
+          class="bold-text">Поехали!</span>» и <span class="bold-text">приступай.</p>
+      <a class="button" href="#">Поехали!</a>
+    </div>
+  </section>
+
+  <!-- Об играх -->
+  <section class="about-games center">
+    <img src="./img/about-games-star1.svg" class="star ag-star-1" alt="*">
+    <img src="./img/about-games-star2.svg" class="star ag-star-2" alt="*">
+    <img src="./img/about-games-star3.svg" class="star ag-star-3" alt="*">
+
+    <div class="about-games__intro">
+      <div class="about-games__header">
+        <h2 class="about-games__title">Об играх</h2>
+        <p class="about-games__description">В моей коллекции представлено 6 игр на разные темы.<br>
+          Игры несложные — в них может поиграть каждый.<br>
+          Все игры доступны для пользования.</p>
+      </div>
+
+      <div class="games">
+        <!-- 1-я колонка -->
+        <div class="games__column">
+          <!-- Карточка 1 -->
+          <article class="games__product">
+            <a href="#" class="games_card">
+              <img src="./img/game1.jpg" alt="Угадай число" class="games-img">
+              <div class="games-info">
+                <span class="games__name">Игра №1</span>
+                <h3 class="games-title">Угадай число</h3>
+              </div>
+            </a>
+          </article>
+          <!-- Карточка 4 -->
+          <article class="games__product">
+            <a href="game4.html" class="games_card">
+              <img src="./img/game4.jpg" alt="Камень, ножницы, бумага" class="games-img">
+              <div class="games-info">
+                <span class="games__name">Игра №4</span>
+                <h3 class="games-title">Камень,<br>ножницы,<br>бумага</h3>
+              </div>
+            </a>
+          </article>
         </div>
-    </section>
+
+        <!-- 2-я колонка -->
+        <div class="games__column">
+          <!-- Карточка 2 -->
+          <article class="games__product">
+            <a href="#" class="games_card">
+              <img src="./img/game2.jpg" alt="Простая арифметика" class="games-img">
+              <div class="games-info">
+                <span class="games__name">Игра №2</span>
+                <h3 class="games-title">Простая арифметика</h3>
+              </div>
+            </a>
+          </article>
+          <!-- Карточка 5 -->
+          <article class="games__product">
+            <a href="game5.html" class="games_card">
+              <img src="./img/game5.jpg" alt="Простая викторина" class="games-img">
+              <div class="games-info">
+                <span class="games__name">Игра №5</span>
+                <h3 class="games-title">Простая викторина</h3>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <!-- 3-я колонка -->
+        <div class="games__column">
+          <!-- Карточка 3 -->
+          <article class="games__product">
+            <a href="game3.html" class="games_card">
+              <img src="./img/game3.jpg" alt="Переверни текст" class="games-img">
+              <div class="games-info">
+                <span class="games__name">Игра №3</span>
+                <h3 class="games-title">Переверни текст</h3>
+              </div>
+            </a>
+          </article>
+          <!-- Карточка 6 -->
+          <article class="games__product">
+            <a href="game6.html" class="games_card">
+              <img src="./img/game6.jpg" alt="Генератор случайных цветов" class="games-img">
+              <div class="games-info">
+                <span class="games__name">Игра №6</span>
+                <h3 class="games-title">Генератор случайных цветов</h3>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
 
 </body>
 
