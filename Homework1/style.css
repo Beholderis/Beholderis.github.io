@@ -1,124 +1,248 @@
 @charset "UTF-8";
-
-body {
-    font-family: "Montserrat", "Arial";
+html {
+  scroll-behavior: smooth;
 }
 
-input, button, a {
-    font-family: "Montserrat", "Arial";
+body {
+  font-family: "Montserrat", "Arial";
+}
+
+input,
+button,
+a {
+  font-family: "Montserrat", "Arial";
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
-/*Добро пожаловать*/
+/*Добро пожаловать...*/
 .hero-page {
-    background-image: url(./img/bg-hero-page.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 800px;
-    position: relative;
+  background-image: url(./img/bg-hero-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  position: relative;
 }
 
 .star {
-    position: absolute;
-    z-index: 1;
+  position: absolute;
+  z-index: 0;
 }
 
 .star-big {
-    top: 0%;
-    right: 0%;
+  top: 0%;
+  right: 0%;
 }
 
 .star-1 {
-    top: 10%;
-    left: 10%;
+  top: 10%;
+  left: 10%;
 }
 
 .star-2 {
-    top: 7%;
-    left: 17%;
+  top: 7%;
+  left: 17%;
 }
 
 .star-3 {
-    bottom: 28%;
-    right: 27%;
+  bottom: 28%;
+  right: 27%;
 }
 
 .star-4 {
-    bottom: 14%;
-    right: 20%;
+  bottom: 14%;
+  right: 20%;
 }
 
 .hero-page__content {
-    color: black;
-    height: 358px;
-    max-width: 770px;
-    padding-top: 197px;
+  color: black;
+  height: 358px;
+  max-width: 770px;
+  padding-top: 197px;
 }
 
 .hero-page__title {
-    max-width: 769px;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 64px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    vertical-align: middle;
+  max-width: 769px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
 }
 
 .hero-page__intro {
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    vertical-align: middle;
-    padding-top: 24px;
-    padding-bottom: 48px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  padding-top: 24px;
+  padding-bottom: 48px;
 }
 
 .bold-text {
-    font-weight: 600;
-    font-style: SemiBold;
+  font-weight: 600;
+  font-style: SemiBold;
 }
 
 .button {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 24px;
-    line-height: 142%;
-    text-align: center;
-    background: #202027;
-    border: 1px solid black;
-    box-sizing: border-box;
-    border-radius: 60px;
-    width: 100%;
-    color: #FFFFFF;
-    transition: background-color 0.5s ease, color 0.5s ease;
-    height: 66px;
-    max-width: 247px;
-    opacity: 1;
-    gap: 10px;
-    padding-top: 16px;
-    padding-right: 28px;
-    padding-bottom: 16px;
-    padding-left: 28px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: white;
-        color: black;
-    }
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 142%;
+  text-align: center;
+  background: #202027;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 60px;
+  width: 100%;
+  color: #FFFFFF;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  height: 66px;
+  max-width: 247px;
+  opacity: 1;
+  gap: 10px;
+  padding-top: 16px;
+  padding-right: 28px;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  cursor: pointer;
 }
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Об играх */
+.about-games {
+  background-color: #202027;
+  position: relative;
+  overflow: hidden;
+}
+.about-games .about-games__header {
+  padding-top: 94px;
+}
+.about-games .about-games__title {
+  color: #ffffff;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+.about-games .about-games__description {
+  color: #ffffff;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  padding-top: 24px;
+}
+
+.ag-star-1 {
+  top: 55%;
+  left: 2%;
+}
+
+.ag-star-2 {
+  top: 59%;
+  left: 5%;
+}
+
+.ag-star-3 {
+  top: 7%;
+  right: 3%;
+}
+
+.games {
+  padding-top: 72px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 32px;
+  align-items: start;
+}
+
+.games__column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+}
+
+.games__product {
+  display: flex;
+  flex-direction: column;
+}
+
+.games_card {
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+.games_card:hover {
+  transform: scale(1.04);
+}
+
+.games-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.games-info {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.games__name {
+  background-color: #F7F7F7;
+  color: #202027;
+  opacity: 1;
+  border-radius: 52.58px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0px;
+  vertical-align: bottom;
+}
+
+.games-title {
+  color: #202027;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}/*# sourceMappingURL=style.css.map */
